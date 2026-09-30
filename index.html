@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avatares FIFA</title>
+  <meta name="description" content="Apresentação do 7º ano sobre avatares de inteligência artificial: Kling AI, HeyGen, Vidnoz e PixVerse.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="viewport">
+  <!-- Fundo ocupa a tela inteira, em qualquer formato de tela -->
+  <div class="aurora" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="stage" id="stage">
+
+    <header class="topbar">
+      <div class="brand">Feira do <i>Conhecimento</i></div>
+      <div class="dots" id="dots"></div>
+      <div class="section-name" id="sectionName"></div>
+    </header>
+
+    <!-- 01 · Capa -->
+    <section class="slide cover" id="capa" data-section="Capa">
+      <div class="bento">
+        <div class="plain" style="grid-column:1/9;grid-row:1/2"><span class="pill">7º Ano</span></div>
+        <div class="plain" style="grid-column:1/9;grid-row:2/6;justify-content:flex-end">
+          <h1 class="cover-title">Avatares</h1>
+          <img class="fifa" src="assets/img/fifa.png" alt="FIFA">
+        </div>
+        <div class="plain" style="grid-column:1/8;grid-row:6/7;justify-content:flex-end">
+          <p class="lead">Avatares de Inteligência Artificial para a Feira do Conhecimento</p>
+        </div>
+        <div class="plain" style="grid-column:9/13;grid-row:1/4;align-items:center;justify-content:center">
+          <img class="jogador" src="assets/img/jogador.svg" alt="">
+        </div>
+        <div class="tile dark names-tile" style="grid-column:9/13;grid-row:4/7">
+          <span class="label">Apresentado por</span>
+          <p class="names">João Gabriel · Bryan C.<br>Arthur Serpa · Rodrigo<br>Bruno · Guilherme</p>
+          <p class="prof">Professora: Marinez</p>
+        </div>
+      </div>
+    </section>
+    <!-- 02 · Sumário -->
+    <section class="slide" id="sumario" data-section="Sumário">
+      <div class="bento" style="grid-template-rows:auto 1fr 1fr;grid-template-columns:repeat(60,1fr)">
+        <div class="row-head" style="grid-column:1/61;grid-row:1"><h2>Sumá<span class="it">rio</span></h2><p class="hint">Clique em um bloco para ir direto ao slide.</p></div>
+        <a class="tile card-link dark" data-go="introducao" href="#introducao" tabindex="0" style="grid-column:1/13;grid-row:2">
+          <span class="num">03</span>
+          <div><p class="card-t">Introdução</p><p class="card-s">O que são os avatares</p></div>
+        </a>
+        <a class="tile card-link" data-go="kling" href="#kling" tabindex="0" style="grid-column:13/25;grid-row:2">
+          <span class="num">04</span>
+          <div><p class="card-t">Kling AI</p><p class="card-s">Slides 04 e 05</p></div>
+        </a>
+        <a class="tile card-link" data-go="heygen" href="#heygen" tabindex="0" style="grid-column:25/37;grid-row:2">
+          <span class="num">06</span>
+          <div><p class="card-t">HeyGen</p><p class="card-s">Slides 06 e 07</p></div>
+        </a>
+        <a class="tile card-link" data-go="vidnoz" href="#vidnoz" tabindex="0" style="grid-column:37/49;grid-row:2">
+          <span class="num">08</span>
+          <div><p class="card-t">Vidnoz</p><p class="card-s">Slides 08 e 09</p></div>
+        </a>
+        <a class="tile card-link" data-go="pixverse" href="#pixverse" tabindex="0" style="grid-column:49/61;grid-row:2">
+          <span class="num">10</span>
+          <div><p class="card-t">PixVerse</p><p class="card-s">Slides 10 e 11</p></div>
+        </a>
+        <a class="tile card-link" data-go="hedra" href="#hedra" tabindex="0" style="grid-column:1/16;grid-row:3">
+          <span class="num">12</span>
+          <div><p class="card-t">Hedra</p><p class="card-s">Slides 12 e 13</p></div>
+        </a>
+        <a class="tile card-link" data-go="comparativo" href="#comparativo" tabindex="0" style="grid-column:16/31;grid-row:3">
+          <span class="num">14</span>
+          <div><p class="card-t">Comparativo</p><p class="card-s">As 5 IAs lado a lado</p></div>
+        </a>
+        <a class="tile card-link" data-go="escolha" href="#escolha" tabindex="0" style="grid-column:31/46;grid-row:3">
+          <span class="num">15</span>
+          <div><p class="card-t">Escolha</p><p class="card-s">Qual IA vamos usar?</p></div>
+        </a>
+        <a class="tile card-link dark" data-go="obrigado" href="#obrigado" tabindex="0" style="grid-column:46/61;grid-row:3">
+          <span class="num">16</span>
+          <div><p class="card-t">Obrigado</p><p class="card-s">Fim da apresentação</p></div>
+        </a>
+      </div>
+    </section>
+    <!-- 03 · Introdução -->
+    <section class="slide" id="introducao" data-section="Introdução">
+      <div class="bento">
+        <div class="tile" style="grid-column:1/7;grid-row:1/4">
+          <span class="pill">Introdução</span>
+          <h2 class="mt-auto" style="font-size:96px">O que são os <span class="it">avatares</span></h2>
+        </div>
+        <div class="plain" style="grid-column:7/13;grid-row:1/5;align-items:center;justify-content:center">
+          <img class="campo" src="assets/img/campo.svg" alt="Campo de futebol">
+        </div>
+        <div class="tile" style="grid-column:1/5;grid-row:4/7;justify-content:center">
+          <ul class="points"><li>São personagens feitos por inteligência artificial.</li><li>Eles serão usados na apresentação e irão ditar as falas.</li></ul>
+        </div>
+        <div class="tile dark" style="grid-column:5/7;grid-row:4/7;justify-content:space-between"><span class="label">Na feira</span><p class="quote">Eles vão <em>ditar as falas.</em></p></div>
+        <div class="tile qa" style="grid-column:7/13;grid-row:5/7">
+          <div class="qa-q"><span class="qa-tag">P</span><p>Quais IAs nós testamos?</p></div>
+          <div class="qa-a"><span class="qa-tag">R</span><p>Kling AI, HeyGen, Vidnoz, PixVerse e Hedra.</p></div>
+        </div>
+      </div>
+    </section>
+    <!-- 04 · Kling AI -->
+    <section class="slide" id="kling" data-section="Kling AI">
+      <div class="bento" style="grid-template-rows:1.25fr 1.6fr">
+        <div class="tile" style="grid-column:1/9;grid-row:1">
+          <h2 style="font-size:104px">Kling <span class="it">AI</span></h2>
+          <p class="lead mt-auto" style="font-size:27px;max-width:none">Plataforma de inteligência artificial criada pela empresa chinesa Kuaishou, que gera vídeos e imagens a partir de textos, fotos e áudios.</p>
+        </div>
+        <div class="tile qa" style="grid-column:1/5;grid-row:2">
+          <div class="qa-q"><span class="qa-tag">P</span><p>Para que ele serve?</p></div>
+          <div class="qa-a"><span class="qa-tag">R</span><p>Serve para criar vídeos com IA, como animar uma imagem parada. Na função Avatar, uma foto e um áudio viram um vídeo do personagem falando.</p></div>
+        </div>
+        <div class="tile qa" style="grid-column:5/9;grid-row:2">
+          <div class="qa-q"><span class="qa-tag">P</span><p>O que o diferencia?</p></div>
+          <div class="qa-a"><span class="qa-tag">R</span><p>Gera avatares realistas em vídeos longos, de até 5 minutos, e dá para pedir a emoção e os movimentos do personagem escrevendo um prompt.</p></div>
+        </div>
+        <div class="video" style="grid-column:9/13;grid-row:1/3">
+          <video src="assets/videos/kling.mp4" poster="assets/img/kling-poster.jpg" controls playsinline preload="metadata" controlslist="nofullscreen" disablepictureinpicture></video><button class="vfull" type="button" aria-label="Ver vídeo em tela cheia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+        </div>
+      </div>
+    </section>
+    <!-- 05 · Kling AI em perguntas -->
+    <section class="slide" id="kling-perguntas" data-section="Kling AI · P&amp;R">
+      <div class="bento" style="grid-template-rows:auto 1fr 1fr;grid-template-columns:repeat(10,1fr)">
+        <div style="grid-column:1/11;grid-row:1"><h2 style="font-size:84px">Kling AI <span class="it">em perguntas</span></h2></div>
+        <div class="tile feat" style="grid-column:1/3;grid-row:2">
+          <h3>Tem avatares que falam?</h3><span class="chip">Sim</span><p>Na função Avatar, a partir de uma foto e de um áudio.</p>
+        </div>
+        <div class="tile feat" style="grid-column:3/5;grid-row:2">
+          <h3>Interage em tempo real?</h3><span class="chip nao">Não</span><p>Gera um vídeo pronto a partir do áudio; não conversa ao vivo.</p>
+        </div>
+        <div class="tile feat" style="grid-column:5/7;grid-row:2">
+          <h3>Tem sincronização labial?</h3><span class="chip">Sim</span>
+        </div>
+        <div class="tile feat" style="grid-column:1/3;grid-row:3">
+          <h3>Tem expressões e movimentos?</h3><span class="chip">Sim</span><p>Mexe o rosto, pisca e movimenta a cabeça e o corpo.</p>
+        </div>
+        <div class="tile feat" style="grid-column:3/5;grid-row:3">
+          <h3>Cria interação entre personagens?</h3><span class="chip parcial">Parcial</span><p>Um personagem por vez; dá para juntar os vídeos num editor.</p>
+        </div>
+        <div class="tile feat" style="grid-column:5/7;grid-row:3">
+          <h3>Tem plano grátis?</h3><span class="chip">Sim</span><p>66 créditos por dia (uns 16 s de avatar), com marca d&#x27;água.</p>
+        </div>
+        <div class="tile dark useful" style="grid-column:7/11;grid-row:2/4">
+          <span class="label">Para o nosso projeto</span>
+          <h3>Ele seria útil? Por quê?</h3><span class="chip">Sim</span>
+          <p>Com ele conseguimos fazer o avatar 3D se apresentar na Feira do Conhecimento, usando a nossa voz gravada e com a boca sincronizada com a fala. Os créditos grátis dão para falas curtas.</p>
+        </div>
+      </div>
+    </section>
+    <!-- 06 · HeyGen -->
+    <section class="slide" id="heygen" data-section="HeyGen">
+      <div class="bento" style="grid-template-rows:1.25fr 1.6fr">
+        <div class="tile" style="grid-column:1/9;grid-row:1">
+          <h2 style="font-size:104px">Hey<span class="it">Gen</span></h2>
+          <p class="lead mt-auto" style="font-size:27px;max-width:none">Ferramenta de inteligência artificial que permite criar vídeos com avatares que falam.</p>
+        </div>
+        <div class="tile qa" style="grid-column:1/5;grid-row:2">
+          <div class="qa-q"><span class="qa-tag">P</span><p>Para que ele serve?</p></div>
+          <div class="qa-a"><span class="qa-tag">R</span><p>Serve para criar vídeos, apresentações, aulas, anúncios e outros conteúdos usando avatares de inteligência artificial.</p></div>
+        </div>
+        <div class="tile qa" style="grid-column:5/9;grid-row:2">
+          <div class="qa-q"><span class="qa-tag">P</span><p>O que o diferencia?</p></div>
+          <div class="qa-a"><span class="qa-tag">R</span><p>A qualidade dos avatares, que conseguem ter movimentos, expressões e sincronização da boca com a fala.</p></div>
+        </div>
+        <div class="video" style="grid-column:9/13;grid-row:1/3">
+          <video src="assets/videos/heygen.mp4" poster="assets/img/heygen-poster.jpg" controls playsinline preload="metadata" controlslist="nofullscreen" disablepictureinpicture></video><button class="vfull" type="button" aria-label="Ver vídeo em tela cheia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+        </div>
+      </div>
+    </section>
+    <!-- 07 · HeyGen em perguntas -->
+    <section class="slide" id="heygen-perguntas" data-section="HeyGen · P&amp;R">
+      <div class="bento" style="grid-template-rows:auto 1fr 1fr;grid-template-columns:repeat(10,1fr)">
+        <div style="grid-column:1/11;grid-row:1"><h2 style="font-size:84px">HeyGen <span class="it">em perguntas</span></h2></div>
+        <div class="tile feat" style="grid-column:1/3;grid-row:2">
+          <h3>Tem avatares que falam?</h3><span class="chip">Sim</span>
+        </div>
+        <div class="tile feat" style="grid-column:3/5;grid-row:2">
+          <h3>Interage em tempo real?</h3><span class="chip parcial">Parcial</span><p>Com o LiveAvatar, um produto pago da própria HeyGen.</p>
+        </div>
+        <div class="tile feat" style="grid-column:5/7;grid-row:2">
+          <h3>Tem sincronização labial?</h3><span class="chip">Sim</span>
+        </div>
+        <div class="tile feat" style="grid-column:1/3;grid-row:3">
+          <h3>Tem expressões e movimentos?</h3><span class="chip">Sim</span><p>Expressões faciais, gestos e movimentos enquanto falam.</p>
+        </div>
+        <div class="tile feat" style="grid-column:3/5;grid-row:3">
+          <h3>Cria interação entre personagens?</h3><span class="chip">Sim</span><p>Até 3 avatares conversando na mesma cena.</p>
+        </div>
+        <div class="tile feat" style="grid-column:5/7;grid-row:3">
+          <h3>Tem plano grátis?</h3><span class="chip">Sim</span><p>Sim, porém é limitado.</p>
+        </div>
+        <div class="tile dark useful" style="grid-column:7/11;grid-row:2/4">
+          <span class="label">Para o nosso projeto</span>
+          <h3>Ele seria útil? Por quê?</h3><span class="chip">Sim</span>
+          <p>Podemos criar um personagem virtual para apresentar as informações do projeto de um jeito mais interessante e fácil de acompanhar. O avatar fala, faz movimentos e sincroniza a boca com a voz.</p>
+        </div>
+      </div>
+    </section>
+    <!-- 08 · Vidnoz -->
+    <section class="slide" id="vidnoz" data-section="Vidnoz">
+      <div class="bento" style="grid-template-rows:1.25fr 1.6fr">
+        <div class="tile" style="grid-column:1/9;grid-row:1">
+          <h2 style="font-size:104px">Vid<span class="it">noz</span></h2>
+          <p class="lead mt-auto" style="font-size:27px;max-width:none">Plataforma de inteligência artificial para criar vídeos com avatares.</p>
+        </div>
+        <div class="tile qa" style="grid-column:1/5;grid-row:2">
+          <div class="qa-q"><span class="qa-tag">P</span><p>Para que ele serve?</p></div>
+          <div class="qa-a"><span class="qa-tag">R</span><p>Serve para fazer vídeos com avatares e editar fotos com IA, como fotos falantes e troca de rosto.</p></div>
+        </div>
+        <div class="tile qa" style="grid-column:5/9;grid-row:2">
+          <div class="qa-q"><span class="qa-tag">P</span><p>O que o diferencia?</p></div>
+          <div class="qa-a"><span class="qa-tag">R</span><p>Criação rápida de vídeos e interface simples de usar.</p></div>
+        </div>
+        <div class="video" style="grid-column:9/13;grid-row:1/3">
+          <video src="assets/videos/vidnoz.mp4" poster="assets/img/vidnoz-poster.jpg" controls playsinline preload="metadata" controlslist="nofullscreen" disablepictureinpicture></video><button class="vfull" type="button" aria-label="Ver vídeo em tela cheia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+        </div>
+      </div>
+    </section>
+    <!-- 09 · Vidnoz em perguntas -->
+    <section class="slide" id="vidnoz-perguntas" data-section="Vidnoz · P&amp;R">
+      <div class="bento" style="grid-template-rows:auto 1fr 1fr;grid-template-columns:repeat(10,1fr)">
+        <div style="grid-column:1/11;grid-row:1"><h2 style="font-size:84px">Vidnoz <span class="it">em perguntas</span></h2></div>
+        <div class="tile feat" style="grid-column:1/3;grid-row:2">
+          <h3>Tem avatares que falam?</h3><span class="chip">Sim</span><p>Clonar a sua voz só nos planos pagos.</p>
+        </div>
+        <div class="tile feat" style="grid-column:3/5;grid-row:2">
+          <h3>Interage em tempo real?</h3><span class="chip nao">Não</span>
+        </div>
+        <div class="tile feat" style="grid-column:5/7;grid-row:2">
+          <h3>Tem sincronização labial?</h3><span class="chip">Sim</span>
+        </div>
+        <div class="tile feat" style="grid-column:1/3;grid-row:3">
+          <h3>Tem expressões e movimentos?</h3><span class="chip">Sim</span>
+        </div>
+        <div class="tile feat" style="grid-column:3/5;grid-row:3">
+          <h3>Cria interação entre personagens?</h3><span class="chip parcial">Parcial</span><p>Diálogo entre dois avatares só no plano Business.</p>
+        </div>
+        <div class="tile feat" style="grid-column:5/7;grid-row:3">
+          <h3>Tem plano grátis?</h3><span class="chip">Sim</span><p>Vídeos de até 3 minutos, em 720p e com marca d&#x27;água.</p>
+        </div>
+        <div class="tile dark useful" style="grid-column:7/11;grid-row:2/4">
+          <span class="label">Para o nosso projeto</span>
+          <h3>Ele seria útil? Por quê?</h3><span class="chip">Sim</span>
+          <p>Essa ferramenta consegue editar imagem com IA, faz vídeos em 720p no plano grátis e é fácil de usar.</p>
+        </div>
+      </div>
+    </section>
+    <!-- 10 · PixVerse -->
+    <section class="slide" id="pixverse" data-section="PixVerse">
+      <div class="bento" style="grid-template-rows:1.25fr 1.6fr">
+        <div class="tile" style="grid-column:1/9;grid-row:1">
+          <h2 style="font-size:104px">Pix<span class="it">Verse</span></h2>
+          <p class="lead mt-auto" style="font-size:27px;max-width:none">Plataforma de inteligência artificial para gerar vídeos e imagens.</p>
+        </div>
+        <div class="tile qa" style="grid-column:1/5;grid-row:2">
+          <div class="qa-q"><span class="qa-tag">P</span><p>Para que ele serve?</p></div>
+          <div class="qa-a"><span class="qa-tag">R</span><p>Serve para criar vídeos ou fotos.</p></div>
+        </div>
+        <div class="tile qa" style="grid-column:5/9;grid-row:2">
+          <div class="qa-q"><span class="qa-tag">P</span><p>O que o diferencia?</p></div>
+          <div class="qa-a"><span class="qa-tag">R</span><p>A rapidez na hora de gerar vídeos.</p></div>
+        </div>
+        <div class="video" style="grid-column:9/13;grid-row:1/3">
+          <video src="assets/videos/pixverse.mp4" poster="assets/img/pixverse-poster.jpg" controls playsinline preload="metadata" controlslist="nofullscreen" disablepictureinpicture></video><button class="vfull" type="button" aria-label="Ver vídeo em tela cheia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+        </div>
+      </div>
+    </section>
+    <!-- 11 · PixVerse em perguntas -->
+    <section class="slide" id="pixverse-perguntas" data-section="PixVerse · P&amp;R">
+      <div class="bento" style="grid-template-rows:auto 1fr 1fr;grid-template-columns:repeat(10,1fr)">
+        <div style="grid-column:1/11;grid-row:1"><h2 style="font-size:84px">PixVerse <span class="it">em perguntas</span></h2></div>
+        <div class="tile feat" style="grid-column:1/3;grid-row:2">
+          <h3>Tem avatares que falam?</h3><span class="chip">Sim</span><p>Com o recurso de sincronização labial (Lip Sync).</p>
+        </div>
+        <div class="tile feat" style="grid-column:3/5;grid-row:2">
+          <h3>Interage em tempo real?</h3><span class="chip nao">Não</span>
+        </div>
+        <div class="tile feat" style="grid-column:5/7;grid-row:2">
+          <h3>Tem sincronização labial?</h3><span class="chip">Sim</span>
+        </div>
+        <div class="tile feat" style="grid-column:1/3;grid-row:3">
+          <h3>Tem expressões e movimentos?</h3><span class="chip">Sim</span>
+        </div>
+        <div class="tile feat" style="grid-column:3/5;grid-row:3">
+          <h3>Cria interação entre personagens?</h3><span class="chip">Sim</span><p>Possível, desde que o prompt descreva a cena certa.</p>
+        </div>
+        <div class="tile feat" style="grid-column:5/7;grid-row:3">
+          <h3>Tem plano grátis?</h3><span class="chip">Sim</span><p>30 créditos por dia (mais 60 no cadastro), com marca d&#x27;água.</p>
+        </div>
+        <div class="tile dark useful" style="grid-column:7/11;grid-row:2/4">
+          <span class="label">Para o nosso projeto</span>
+          <h3>Ele seria útil? Por quê?</h3><span class="chip">Sim</span>
+          <p>Gera vídeos de alta qualidade e também dá para colocar a voz do aluno por cima de forma fácil.</p>
+        </div>
+      </div>
+    </section>
+    <!-- 12 · Hedra -->
+    <section class="slide" id="hedra" data-section="Hedra">
+      <div class="bento" style="grid-template-rows:1.25fr 1.6fr">
+        <div class="tile" style="grid-column:1/9;grid-row:1">
+          <h2 style="font-size:104px">Hed<span class="it">ra</span></h2>
+          <p class="lead mt-auto" style="font-size:27px;max-width:none">Plataforma de inteligência artificial para criar vídeos e imagens, com personagens que falam.</p>
+        </div>
+        <div class="tile qa" style="grid-column:1/5;grid-row:2">
+          <div class="qa-q"><span class="qa-tag">P</span><p>Para que ele serve?</p></div>
+          <div class="qa-a"><span class="qa-tag">R</span><p>Serve para criar vídeos e fotos.</p></div>
+        </div>
+        <div class="tile qa" style="grid-column:5/9;grid-row:2">
+          <div class="qa-q"><span class="qa-tag">P</span><p>O que o diferencia?</p></div>
+          <div class="qa-a"><span class="qa-tag">R</span><p>Reúne modelos de várias outras IAs, como Kling, Seedance e Veo, num lugar só.</p></div>
+        </div>
+        <div class="video" style="grid-column:9/13;grid-row:1/3">
+          <video src="assets/videos/hedra.mp4" poster="assets/img/hedra-poster.jpg" controls playsinline preload="metadata" controlslist="nofullscreen" disablepictureinpicture></video><button class="vfull" type="button" aria-label="Ver vídeo em tela cheia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+        </div>
+      </div>
+    </section>
+    <!-- 13 · Hedra em perguntas -->
+    <section class="slide" id="hedra-perguntas" data-section="Hedra · P&amp;R">
+      <div class="bento" style="grid-template-rows:auto 1fr 1fr;grid-template-columns:repeat(10,1fr)">
+        <div style="grid-column:1/11;grid-row:1"><h2 style="font-size:84px">Hedra <span class="it">em perguntas</span></h2></div>
+        <div class="tile feat" style="grid-column:1/3;grid-row:2">
+          <h3>Tem avatares que falam?</h3><span class="chip">Sim</span><p>Com o modelo Character-3, a partir de uma foto e de um áudio.</p>
+        </div>
+        <div class="tile feat" style="grid-column:3/5;grid-row:2">
+          <h3>Interage em tempo real?</h3><span class="chip parcial">Parcial</span><p>Existe o Realtime Avatar, mas é uma ferramenta para programadores.</p>
+        </div>
+        <div class="tile feat" style="grid-column:5/7;grid-row:2">
+          <h3>Tem sincronização labial?</h3><span class="chip">Sim</span><p>O Character-3 sincroniza a boca e as expressões com o áudio.</p>
+        </div>
+        <div class="tile feat" style="grid-column:1/3;grid-row:3">
+          <h3>Tem expressões e movimentos?</h3><span class="chip">Sim</span>
+        </div>
+        <div class="tile feat" style="grid-column:3/5;grid-row:3">
+          <h3>Cria interação entre personagens?</h3><span class="chip parcial">Parcial</span><p>O Character-3 anima um personagem por vez; dá para juntar os vídeos num editor.</p>
+        </div>
+        <div class="tile feat" style="grid-column:5/7;grid-row:3">
+          <h3>Tem plano grátis?</h3><span class="chip">Sim</span><p>100 créditos no plano grátis (uns 16 s de avatar), com marca d&#x27;água. Pagando, tem mais créditos.</p>
+        </div>
+        <div class="tile dark useful" style="grid-column:7/11;grid-row:2/4">
+          <span class="label">Para o nosso projeto</span>
+          <h3>Ele seria útil? Por quê?</h3><span class="chip parcial">Parcial</span>
+          <p>Não 100%, mas ajudaria a ver qual outra IA se encaixa melhor, sem precisar abrir vários sites ou apps.</p>
+        </div>
+      </div>
+    </section>
+    <!-- 14 · Comparativo -->
+    <section class="slide" id="comparativo" data-section="Comparativo">
+      <div class="bento" style="grid-template-rows:auto 1fr">
+        <div style="grid-column:1/13;grid-row:1"><h2>Lado a <span class="it">lado</span></h2></div>
+        <div class="tile" style="grid-column:1/13;grid-row:2;justify-content:center">
+          <table class="table">
+            <thead><tr><th></th><th>Kling AI</th><th>HeyGen</th><th>Vidnoz</th><th>PixVerse</th><th>Hedra</th></tr></thead>
+            <tbody>
+              <tr><td>Tem avatares que falam?</td><td><span class="chip">Sim</span></td><td><span class="chip">Sim</span></td><td><span class="chip">Sim</span></td><td><span class="chip">Sim</span></td><td><span class="chip">Sim</span></td></tr>
+              <tr><td>Interage em tempo real?</td><td><span class="chip nao">Não</span></td><td><span class="chip parcial">Parcial</span></td><td><span class="chip nao">Não</span></td><td><span class="chip nao">Não</span></td><td><span class="chip parcial">Parcial</span></td></tr>
+              <tr><td>Tem sincronização labial?</td><td><span class="chip">Sim</span></td><td><span class="chip">Sim</span></td><td><span class="chip">Sim</span></td><td><span class="chip">Sim</span></td><td><span class="chip">Sim</span></td></tr>
+              <tr><td>Tem expressões e movimentos?</td><td><span class="chip">Sim</span></td><td><span class="chip">Sim</span></td><td><span class="chip">Sim</span></td><td><span class="chip">Sim</span></td><td><span class="chip">Sim</span></td></tr>
+              <tr><td>Cria interação entre personagens?</td><td><span class="chip parcial">Parcial</span></td><td><span class="chip">Sim</span></td><td><span class="chip parcial">Parcial</span></td><td><span class="chip">Sim</span></td><td><span class="chip parcial">Parcial</span></td></tr>
+              <tr><td>Tem plano grátis?</td><td><span class="chip">Sim</span></td><td><span class="chip">Sim</span></td><td><span class="chip">Sim</span></td><td><span class="chip">Sim</span></td><td><span class="chip">Sim</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- 15 · Escolha -->
+    <section class="slide" id="escolha" data-section="Escolha">
+      <div class="bento" style="grid-template-rows:auto 1fr;grid-template-columns:repeat(60,1fr)">
+        <div class="row-head" style="grid-column:1/61;grid-row:1"><h2>Qual IA vamos <span class="it">escolher?</span></h2><p class="hint">Assista aos vídeos e clique na IA escolhida.</p></div>
+        <div class="tile card-link choice" data-go="escolheu-kling" role="link" aria-label="Escolher Kling AI" tabindex="0" style="grid-column:1/13;grid-row:2">
+          <div class="vframe"><video src="assets/videos/kling.mp4" poster="assets/img/kling-poster.jpg" controls playsinline preload="metadata" controlslist="nofullscreen" disablepictureinpicture></video><button class="vfull" type="button" aria-label="Ver vídeo em tela cheia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div>
+          <p class="card-t">Kling <span class="it">AI</span></p>
+          <div class="foot"><p class="card-s">Avatares realistas feitos a partir de uma foto e da nossa voz gravada, com a boca sincronizada.</p><span class="arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <div class="tile card-link choice" data-go="escolheu-heygen" role="link" aria-label="Escolher HeyGen" tabindex="0" style="grid-column:13/25;grid-row:2">
+          <div class="vframe"><video src="assets/videos/heygen.mp4" poster="assets/img/heygen-poster.jpg" controls playsinline preload="metadata" controlslist="nofullscreen" disablepictureinpicture></video><button class="vfull" type="button" aria-label="Ver vídeo em tela cheia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div>
+          <p class="card-t">Hey<span class="it">Gen</span></p>
+          <div class="foot"><p class="card-s">Avatares de alta qualidade, vários na mesma cena e até conversa em tempo real.</p><span class="arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <div class="tile card-link choice" data-go="escolheu-vidnoz" role="link" aria-label="Escolher Vidnoz" tabindex="0" style="grid-column:25/37;grid-row:2">
+          <div class="vframe"><video src="assets/videos/vidnoz.mp4" poster="assets/img/vidnoz-poster.jpg" controls playsinline preload="metadata" controlslist="nofullscreen" disablepictureinpicture></video><button class="vfull" type="button" aria-label="Ver vídeo em tela cheia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div>
+          <p class="card-t">Vid<span class="it">noz</span></p>
+          <div class="foot"><p class="card-s">Fácil de usar, com vídeos de até 3 minutos grátis em 720p.</p><span class="arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <div class="tile card-link choice" data-go="escolheu-pixverse" role="link" aria-label="Escolher PixVerse" tabindex="0" style="grid-column:37/49;grid-row:2">
+          <div class="vframe"><video src="assets/videos/pixverse.mp4" poster="assets/img/pixverse-poster.jpg" controls playsinline preload="metadata" controlslist="nofullscreen" disablepictureinpicture></video><button class="vfull" type="button" aria-label="Ver vídeo em tela cheia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div>
+          <p class="card-t">Pix<span class="it">Verse</span></p>
+          <div class="foot"><p class="card-s">Gera vídeos rápido e dá para colocar a voz do aluno por cima.</p><span class="arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <div class="tile card-link choice" data-go="escolheu-hedra" role="link" aria-label="Escolher Hedra" tabindex="0" style="grid-column:49/61;grid-row:2">
+          <div class="vframe"><video src="assets/videos/hedra.mp4" poster="assets/img/hedra-poster.jpg" controls playsinline preload="metadata" controlslist="nofullscreen" disablepictureinpicture></video><button class="vfull" type="button" aria-label="Ver vídeo em tela cheia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div>
+          <p class="card-t">Hed<span class="it">ra</span></p>
+          <div class="foot"><p class="card-s">Reúne várias IAs num lugar só e anima personagens com a boca sincronizada.</p><span class="arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+      </div>
+    </section>
+    <!-- Resultado · Kling AI (só abre pela escolha) -->
+    <section class="slide" id="escolheu-kling" data-section="Resultado" data-hidden data-back="escolha" data-next="obrigado">
+      <div class="bento">
+        <div class="plain" style="grid-column:1/9;grid-row:1/4;justify-content:center">
+          <p class="it" style="font-size:52px;color:var(--muted)">Você escolheu</p>
+          <h1 class="result-name">Kling <span class="it">AI</span></h1>
+        </div>
+        <div class="tile dark" style="grid-column:1/9;grid-row:4/7">
+          <span class="label">Por quê?</span>
+          <p class="quote" style="font-size:46px;margin-top:22px">Avatares realistas feitos a partir de uma foto e da nossa voz gravada, com a boca sincronizada.</p>
+          <div class="btns">
+            <button class="btn ghost" type="button" data-go="escolha">← Escolher outra</button>
+            <button class="btn" type="button" data-go="obrigado">Continuar →</button>
+          </div>
+        </div>
+        <div class="video" style="grid-column:9/13;grid-row:1/7">
+          <video src="assets/videos/kling.mp4" poster="assets/img/kling-poster.jpg" controls playsinline preload="none" controlslist="nofullscreen" disablepictureinpicture></video><button class="vfull" type="button" aria-label="Ver vídeo em tela cheia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+        </div>
+      </div>
+    </section>
+    <!-- Resultado · HeyGen (só abre pela escolha) -->
+    <section class="slide" id="escolheu-heygen" data-section="Resultado" data-hidden data-back="escolha" data-next="obrigado">
+      <div class="bento">
+        <div class="plain" style="grid-column:1/9;grid-row:1/4;justify-content:center">
+          <p class="it" style="font-size:52px;color:var(--muted)">Você escolheu</p>
+          <h1 class="result-name">Hey<span class="it">Gen</span></h1>
+        </div>
+        <div class="tile dark" style="grid-column:1/9;grid-row:4/7">
+          <span class="label">Por quê?</span>
+          <p class="quote" style="font-size:46px;margin-top:22px">Avatares de alta qualidade, vários na mesma cena e até conversa em tempo real.</p>
+          <div class="btns">
+            <button class="btn ghost" type="button" data-go="escolha">← Escolher outra</button>
+            <button class="btn" type="button" data-go="obrigado">Continuar →</button>
+          </div>
+        </div>
+        <div class="video" style="grid-column:9/13;grid-row:1/7">
+          <video src="assets/videos/heygen.mp4" poster="assets/img/heygen-poster.jpg" controls playsinline preload="none" controlslist="nofullscreen" disablepictureinpicture></video><button class="vfull" type="button" aria-label="Ver vídeo em tela cheia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+        </div>
+      </div>
+    </section>
+    <!-- Resultado · Vidnoz (só abre pela escolha) -->
+    <section class="slide" id="escolheu-vidnoz" data-section="Resultado" data-hidden data-back="escolha" data-next="obrigado">
+      <div class="bento">
+        <div class="plain" style="grid-column:1/9;grid-row:1/4;justify-content:center">
+          <p class="it" style="font-size:52px;color:var(--muted)">Você escolheu</p>
+          <h1 class="result-name">Vid<span class="it">noz</span></h1>
+        </div>
+        <div class="tile dark" style="grid-column:1/9;grid-row:4/7">
+          <span class="label">Por quê?</span>
+          <p class="quote" style="font-size:46px;margin-top:22px">Fácil de usar, com vídeos de até 3 minutos grátis em 720p.</p>
+          <div class="btns">
+            <button class="btn ghost" type="button" data-go="escolha">← Escolher outra</button>
+            <button class="btn" type="button" data-go="obrigado">Continuar →</button>
+          </div>
+        </div>
+        <div class="video" style="grid-column:9/13;grid-row:1/7">
+          <video src="assets/videos/vidnoz.mp4" poster="assets/img/vidnoz-poster.jpg" controls playsinline preload="none" controlslist="nofullscreen" disablepictureinpicture></video><button class="vfull" type="button" aria-label="Ver vídeo em tela cheia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+        </div>
+      </div>
+    </section>
+    <!-- Resultado · PixVerse (só abre pela escolha) -->
+    <section class="slide" id="escolheu-pixverse" data-section="Resultado" data-hidden data-back="escolha" data-next="obrigado">
+      <div class="bento">
+        <div class="plain" style="grid-column:1/9;grid-row:1/4;justify-content:center">
+          <p class="it" style="font-size:52px;color:var(--muted)">Você escolheu</p>
+          <h1 class="result-name">Pix<span class="it">Verse</span></h1>
+        </div>
+        <div class="tile dark" style="grid-column:1/9;grid-row:4/7">
+          <span class="label">Por quê?</span>
+          <p class="quote" style="font-size:46px;margin-top:22px">Gera vídeos rápido e dá para colocar a voz do aluno por cima.</p>
+          <div class="btns">
+            <button class="btn ghost" type="button" data-go="escolha">← Escolher outra</button>
+            <button class="btn" type="button" data-go="obrigado">Continuar →</button>
+          </div>
+        </div>
+        <div class="video" style="grid-column:9/13;grid-row:1/7">
+          <video src="assets/videos/pixverse.mp4" poster="assets/img/pixverse-poster.jpg" controls playsinline preload="none" controlslist="nofullscreen" disablepictureinpicture></video><button class="vfull" type="button" aria-label="Ver vídeo em tela cheia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+        </div>
+      </div>
+    </section>
+    <!-- Resultado · Hedra (só abre pela escolha) -->
+    <section class="slide" id="escolheu-hedra" data-section="Resultado" data-hidden data-back="escolha" data-next="obrigado">
+      <div class="bento">
+        <div class="plain" style="grid-column:1/9;grid-row:1/4;justify-content:center">
+          <p class="it" style="font-size:52px;color:var(--muted)">Você escolheu</p>
+          <h1 class="result-name">Hed<span class="it">ra</span></h1>
+        </div>
+        <div class="tile dark" style="grid-column:1/9;grid-row:4/7">
+          <span class="label">Por quê?</span>
+          <p class="quote" style="font-size:46px;margin-top:22px">Reúne várias IAs num lugar só e anima personagens com a boca sincronizada.</p>
+          <div class="btns">
+            <button class="btn ghost" type="button" data-go="escolha">← Escolher outra</button>
+            <button class="btn" type="button" data-go="obrigado">Continuar →</button>
+          </div>
+        </div>
+        <div class="video" style="grid-column:9/13;grid-row:1/7">
+          <video src="assets/videos/hedra.mp4" poster="assets/img/hedra-poster.jpg" controls playsinline preload="none" controlslist="nofullscreen" disablepictureinpicture></video><button class="vfull" type="button" aria-label="Ver vídeo em tela cheia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+        </div>
+      </div>
+    </section>
+    <!-- 16 · Obrigado -->
+    <section class="slide" id="obrigado" data-section="Fim">
+      <div class="bento">
+        <div class="plain" style="grid-column:1/9;grid-row:1/4;justify-content:center"><h1 class="thanks">Obri<span class="it">gado!</span></h1></div>
+        <div class="plain" style="grid-column:9/13;grid-row:1/7;justify-content:center"><img class="gol" src="assets/img/gol.svg" alt=""></div>
+        <div class="tile" style="grid-column:1/8;grid-row:5/7;flex-direction:row;align-items:center;justify-content:space-between;gap:24px">
+          <p class="lead" style="color:var(--ink)">Ficou alguma dúvida? Pode perguntar!</p>
+          <span class="pill" style="align-self:center;font-size:26px;padding:16px 30px">Perguntas?</span>
+        </div>
+      </div>
+    </section>
+
+    <nav class="bottombar" aria-label="Navegação">
+      <div class="counter" id="counter"></div>
+      <button type="button" id="fs" aria-label="Tela cheia"><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+      <button type="button" id="prev" aria-label="Slide anterior"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button type="button" id="next" aria-label="Próximo slide"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+    </nav>
+  </div>
+</div>
+<div class="lightbox" id="lightbox" hidden>
+  <video id="lightboxVideo" controls playsinline controlslist="nofullscreen" disablepictureinpicture></video>
+  <button class="lb-close" id="lightboxClose" type="button" aria-label="Fechar vídeo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
